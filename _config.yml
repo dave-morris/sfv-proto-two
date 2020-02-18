@@ -22,7 +22,7 @@ title: SFV - Two-column layout
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A basic prototype using the sidebar layout from every-layout to see how it could allow a two=-column layout for the SFV page.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/sfv-proto-two" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
