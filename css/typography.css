@@ -18,7 +18,7 @@
   src: url("../assets/BBCReithSans_Bd.ttf") format('truetype');
 }
 
-.type-headlineLg      { font-family: 'Gill Sans MT', sans-serif; font-size: 2.75rem; line-height: 3rem; }
+.type-headlineLg      { font-family: 'Gill Sans MT', sans-serif; font-size: 2.75rem; line-height: 3rem; letter-spacing: 1.5px; }
 .type-headlineSm      { font-size: 1.5rem; line-height: 1.625rem; }
 .type-indexHeadlineLg { font-size: 1.5rem; line-height: 1.625rem; }
 .type-indexHeadlineMd { font-family: 'ReithSerifMed', sans-serif; font-size: 1.25rem; line-height: 1.5rem; }
