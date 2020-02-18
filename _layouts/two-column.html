@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BBC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/normaliser.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/typography.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/components.css">
+
+  </head>
+
+  <body>
+
+    <header class="type-headlineLg">NEWS</header>
+
+    <main>
+
+      {{ content }}
+
+    </main>
+
+    <footer></footer>
+
+    <script type="text/javascript">
+
+    /**
+     * Stop all iframes or HTML5 <video>'s from playing
+     */
+    var stopVideos = function () {
+    	var videos = document.querySelectorAll('iframe, video');
+    	Array.prototype.forEach.call(videos, function (video) {
+    		if (video.tagName.toLowerCase() === 'video') {
+    			video.pause();
+    		} else {
+    			var src = video.src;
+    			video.src = src;
+    		}
+    	});
+    };
+
+    function hidePlayers() {
+
+      var myClasses = document.querySelectorAll('.media-item'),
+      i = 0,
+      l = myClasses.length;
+
+      for (i; i < l; i++) {
+        myClasses[i].style.display = 'none';
+      }
+
+    }
+
+      document.querySelectorAll('iframe, video')[0].addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+      // What you want to do after the event
+      console.log("Something has ended");
+      }
+
+
+      function showVideo1() {
+        hidePlayers();
+        stopVideos();
+        document.getElementById("p0806z12").style.display = 'block';
+      };
+
+      function showVideo2() {
+        hidePlayers();
+        stopVideos();
+        document.getElementById("p07yxtyt").style.display = 'block';
+      };
+
+      function showVideo3() {
+        hidePlayers();
+        stopVideos();
+        document.getElementById("p074rc6n").style.display = 'block';
+      };
+
+      function showVideo4() {
+        hidePlayers();
+        stopVideos();
+        document.getElementById("p0808hdz").style.display = 'block';
+      };
+
+    </script>
+
+  </body>
+
+  <!-- <script type="text/javascript" src="{{ site.baseurl }}/scripts/main.js"></script> -->
+
+</html>

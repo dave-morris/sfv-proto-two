@@ -1,0 +1,73 @@
+---
+layout: two-column
+---
+
+<div class="page-wrapper">
+  <div class="one-column-layout">
+
+    <div class="with-sidebar">
+      <div> <!-- intermediary wrapper -->
+        <div class="non-sidebar"><!-- non-sidebar -->
+
+          <div class="media-item" id="{{ site.data.news-video-playlist[0].pid }}">
+
+            <div class="test-video">
+              <iframe width="100%" frameborder="0" src="https://www.bbc.co.uk/news/av/embed/p083qw62/51535947"></iframe>
+            </div>
+
+            <div class="video__title type-indexHeadlineMd">{{ site.data.news-video-playlist[0].title }}</div>
+            <div class="video__description type-bodyCopy">{{ site.data.news-video-playlist[0].description }}</div>
+            <div class="video__attribution type-meta">{{ site.data.news-video-playlist[0].timestamp }}</div>
+
+          </div>
+
+          <div class="media-item" id="{{ site.data.news-video-playlist[1].pid }}">
+
+            <div class="test-video">
+              <iframe width="100%" frameborder="0" src="https://www.bbc.co.uk/news/av/embed/p07rf55d/50101628"></iframe>
+            </div>
+
+            <div class="video__title type-indexHeadlineMd">{{ site.data.news-video-playlist[1].title }}</div>
+            <div class="video__description type-bodyCopy">{{ site.data.news-video-playlist[1].description }}</div>
+            <div class="video__attribution type-meta">{{ site.data.news-video-playlist[1].timestamp }}</div>
+
+          </div>
+
+          <div class="media-item" id="{{ site.data.news-video-playlist[2].pid }}">
+
+            <div class="test-video">
+              <iframe width="100%" frameborder="0" src="https://www.bbc.co.uk/news/av/embed/p083qlmc/51536960"></iframe>
+            </div>
+
+            <div class="video__title type-indexHeadlineMd">{{ site.data.news-video-playlist[2].title }}</div>
+            <div class="video__description type-bodyCopy">{{ site.data.news-video-playlist[2].description }}</div>
+            <div class="video__attribution type-meta">{{ site.data.news-video-playlist[2].timestamp }}</div>
+
+          </div>
+
+          <div class="media-item" id="{{ site.data.news-video-playlist[3].pid }}">
+
+            <div class="test-video">
+              <iframe width="100%" frameborder="0" src="https://www.bbc.co.uk/news/av/embed/p083l589/51521926"></iframe>
+            </div>
+
+            <div class="video__title type-indexHeadlineMd">{{ site.data.news-video-playlist[3].title }}</div>
+            <div class="video__description type-bodyCopy">{{ site.data.news-video-playlist[3].description }}</div>
+            <div class="video__attribution type-meta">{{ site.data.news-video-playlist[3].timestamp }}</div>
+
+          </div>
+
+        </div>
+
+        <div class="sidebar"><!-- sidebar -->
+
+          {% include promo-list.html %}
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

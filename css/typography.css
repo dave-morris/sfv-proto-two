@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'ReithSansReg';
+  src: url('../assets/BBCReithSans_Rg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ReithSansMed';
+  src: url("../assets/BBCReithSans_Md.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'ReithSerifMed';
+  src: url("../assets/BBCReithSerif_Md.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'ReithSansBold';
+  src: url("../assets/BBCReithSans_Bd.ttf") format('truetype');
+}
+
+.type-headlineLg      { font-family: 'Gill Sans MT', sans-serif; font-size: 2.75rem; line-height: 3rem; }
+.type-headlineSm      { font-size: 1.5rem; line-height: 1.625rem; }
+.type-indexHeadlineLg { font-size: 1.5rem; line-height: 1.625rem; }
+.type-indexHeadlineMd { font-family: 'ReithSerifMed', sans-serif; font-size: 1.25rem; line-height: 1.5rem; }
+.type-sectionHeading  { font-family: 'ReithSerifMed', sans-serif; font-size: 1.125rem; line-height: 1.375rem; }
+.type-bodyCopy        { font-family: 'ReithSansReg', sans-serif; font-size: 1rem; line-height: 1.375rem; letter-spacing: -0.05px;}
+.type-indexHeadlineSm { font-family: 'ReithSerifMed', sans-serif; font-size: 1rem; line-height: 1.25rem; }
+.type-desc            { font-family: 'ReithSansReg', sans-serif; font-size: 0.875rem; line-height: 1.125rem; }
+.type-meta            { font-family: 'ReithSansReg', sans-serif; font-size: 0.8125rem; line-height: 1rem; }
+.type-labels          { font-family: 'ReithSansReg', sans-serif; font-size: 0.75rem; line-height: 1rem; }
+
+
+@media only screen and (min-width: 600px) {
+  .type-headlineLg      { font-size: 2.75rem; line-height: 3rem; }
+  .type-headlineSm      { font-size: 2rem; line-height: 2.25rem; }
+  .type-indexHeadlineLg { font-size: 1.75rem; line-height: 2rem; }
+  .type-indexHeadlineMd { font-size: 1.5rem; line-height: 1.75rem; }
+  .type-sectionHeading  { font-size: 1.25rem; line-height: 1.5rem; }
+}
