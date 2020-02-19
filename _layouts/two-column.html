@@ -42,14 +42,22 @@
     	});
     };
 
-    function hidePlayers() {
+    function hidePlayersAndLabels() {
 
-      var myClasses = document.querySelectorAll('.media-item'),
+      var mediaItems = document.querySelectorAll('.media-item'),
       i = 0,
-      l = myClasses.length;
+      l = mediaItems.length;
 
       for (i; i < l; i++) {
-        myClasses[i].style.display = 'none';
+        mediaItems[i].style.display = 'none';
+      }
+
+      var labels = document.querySelectorAll('.label'),
+      index = 0,
+      ll = labels.length;
+
+      for (index; index < ll; index++) {
+        labels[index].style.display = 'none';
       }
 
       window.scrollTo(0,0);
@@ -64,29 +72,66 @@
 
 
       function showVideo1() {
-        hidePlayers();
+        hidePlayersAndLabels();
         stopVideos();
         document.getElementById("p0806z12").style.display = 'block';
+
+        const thisPromo = document.querySelectorAll('.promo')[0];
+        const nextPromo = document.querySelectorAll('.promo')[1];
+
+        var nowPlaying = thisPromo.getElementsByClassName('label')[0];
+        var upNext = nextPromo.getElementsByClassName('label')[1];
+
+        nowPlaying.style.display = 'block';
+        upNext.style.display = 'block';
+
       };
 
       function showVideo2() {
-        hidePlayers();
+        hidePlayersAndLabels();
         stopVideos();
         document.getElementById("p07yxtyt").style.display = 'block';
+
+        const thisPromo = document.querySelectorAll('.promo')[1];
+        const nextPromo = document.querySelectorAll('.promo')[2];
+
+        var nowPlaying = thisPromo.getElementsByClassName('label')[0];
+        var upNext = nextPromo.getElementsByClassName('label')[1];
+
+        nowPlaying.style.display = 'block';
+        upNext.style.display = 'block';
 
       };
 
       function showVideo3() {
-        hidePlayers();
+        hidePlayersAndLabels();
         stopVideos();
         document.getElementById("p074rc6n").style.display = 'block';
+
+        const thisPromo = document.querySelectorAll('.promo')[2];
+        const nextPromo = document.querySelectorAll('.promo')[3];
+
+        var nowPlaying = thisPromo.getElementsByClassName('label')[0];
+        var upNext = nextPromo.getElementsByClassName('label')[1];
+
+        nowPlaying.style.display = 'block';
+        upNext.style.display = 'block';
 
       };
 
       function showVideo4() {
-        hidePlayers();
+        hidePlayersAndLabels();
         stopVideos();
         document.getElementById("p0808hdz").style.display = 'block';
+
+        const thisPromo = document.querySelectorAll('.promo')[3];
+        const nextPromo = document.querySelectorAll('.promo')[4];
+
+        var nowPlaying = thisPromo.getElementsByClassName('label')[0];
+        var upNext = nextPromo.getElementsByClassName('label')[1];
+
+        nowPlaying.style.display = 'block';
+        upNext.style.display = 'block';
 
       };
 
